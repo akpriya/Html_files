@@ -1,0 +1,13 @@
+console.log("James", "Smith");
+let myarray1 = [1,2,3];
+let myarray2 = [4,5,6];
+let myarrays = [...myarray1, ...myarray2];
+console.log("Array 1", myarray1);
+console.log("Array 2", myarray2);
+console.log("My arrays", myarrays);
+let obj1 = {fname : "Priya", lname : "Ashok"};
+let obj2 = {age : 30, country : "India"};
+console.log("Object 1", obj1);
+console.log("Object 2", obj2);
+let myobj = {...obj1, ...obj2};
+console.log("My Object", myobj);
