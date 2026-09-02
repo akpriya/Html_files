@@ -11,7 +11,7 @@
 </head>
 <body>
     <h1>Create aLead</h1>
-    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5g00000LS0Jn" method="POST" onsubmit="beforeSubmit()">
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5g00000LS0Jn" method="POST" onsubmit="beforeSubmit(event)">
         <input type="hidden" name="oid" value="00D5g00000LS0Jn">
         <input type="hidden" name="retURL" value="https://akpriya.github.io/Html_files/WebToLead/thanks.html">
         <input type=hidden name='captcha_settings' value='{"keyname":"WebToLead","fallback":"true","orgId":"00D5g00000LS0Jn","ts":""}'>
@@ -28,7 +28,7 @@
         <!-- <span class="dateInput dateOnlyInput"><input  id="00Ng500000SiSy9" name="00Ng500000SiSy9" size="12" type="text" /></span><br> -->
 
         <input type="hidden"  id="lead_source" name="lead_source" value="Web" /><br>
-        <div class="g-recaptcha" data-sitekey="6LepOKUtAAAAAF5MuYngaHAr40a7K-U9O7BLz8xX"></div>
+        <div class="g-recaptcha" data-callback="captchaSuccess" data-sitekey="6LepOKUtAAAAAF5MuYngaHAr40a7K-U9O7BLz8xX"></div>
         <input type="submit" name="submit" class="submit">
     </form>
 </body>
