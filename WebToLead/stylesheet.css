@@ -17,8 +17,11 @@ input{
 }
 .submit{
     margin:30px auto 0 auto;
-    width:40%;
-    background-color:#c797f9;
+    font-weight: bold;
+    font-size: 16px;
+    height:30px;
+    width:30%;
+    background-color:#d0aaf8;
     border-radius:6px;
 }
 form{
@@ -28,4 +31,9 @@ form{
     min-width:300px;
     max-width:500px;
     margin:auto;
+}
+.g-recaptcha{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
 }

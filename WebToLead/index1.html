@@ -7,12 +7,14 @@
     <title>Web to Lead Form</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
     <script src="script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 <body>
     <h1>Create aLead</h1>
     <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5g00000LS0Jn" method="POST" onsubmit="beforeSubmit()">
         <input type="hidden" name="oid" value="00D5g00000LS0Jn">
-        <input type="hidden" name="retURL" value="https://akpriya.github.io/HTML-files/thanks.html"> 
+        <input type="hidden" name="retURL" value="https://akpriya.github.io/HTML-files/thanks.html">
+        <input type=hidden name='captcha_settings' value='{"keyname":"WebToLead","fallback":"true","orgId":"00D5g00000LS0Jn","ts":""}'>
         <input type="hidden" name="00Ng500000SiSy9" class="outputdate" >
 
         <label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required /><br>
@@ -26,6 +28,7 @@
         <!-- <span class="dateInput dateOnlyInput"><input  id="00Ng500000SiSy9" name="00Ng500000SiSy9" size="12" type="text" /></span><br> -->
 
         <input type="hidden"  id="lead_source" name="lead_source" value="Web" /><br>
+        <div class="g-recaptcha" data-sitekey="6LepOKUtAAAAAF5MuYngaHAr40a7K-U9O7BLz8xX"></div>
         <input type="submit" name="submit" class="submit">
     </form>
 </body>
